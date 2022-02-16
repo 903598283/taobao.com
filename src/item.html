@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./js/jquery.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/item.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_3168642_14cx0zfo8en.css">
@@ -126,7 +127,8 @@
                     </div>
                     <div class="meta">
                         <span class="jiage">价格</span>
-                        <span class="prc">¥48.00</span>
+                        <span style="font-size:24px;color:#f40;font-weight:700;">¥</span>
+                        <span class="prc">48.00</span>
                         <div class="pl">
                             <span class="num">205</span>
                             <span>交易成功</span>
@@ -171,7 +173,7 @@
                                     <input type="text" name="" id="" value="1">
                                     <a href="" class="jia">+</a>
                                 </span>
-                                <span>件（库存170件）</span>
+                                <span>件（库存<span class="nums">170</span>件）</span>
                             </dd>
                         </dl>
                     </div>
@@ -250,6 +252,29 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="bar-wrap clearfix">
+        <div class="bar-wrap-content">
+            <div class="bar-search">
+                <div class="search-panel">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="搜本店">
+                        <button type="submit" class="iconfont icon-sousuo"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="inner-wrap">
+                <ul>
+                    <li class="active">宝贝详情</li>
+                    <li>累计评论</li>
+                    <li>专享服务</li>
+                    <li class="sjgm">手机购买</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-wrap">
     </div>
 
     <div class="footer-box">
@@ -414,7 +439,7 @@
         <ul class="last">
             <li>
                 <div class="iconfont icon-xiugai"></div>
-            </li>
+            </li> 
             <li>
                 <div class="iconfont icon-fanhuidingbu"></div>
             </li>

@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/login.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_3168642_14cx0zfo8en.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_3168642_dfyetheijv5.css">
 </head>
 
 <body>
@@ -43,33 +43,67 @@
                             <div class="login-content">
                                 <div class="login-password">
                                     <div class="login-tab">
-                                        <a href="javascript:void(0);" target="_self" class="password-login">密码登录</a>
-                                        <a href="javascript:void(0);" target="_self" class="sms-login">短信登录</a>
+                                        <a href="javascript:void(0);" target="_self" class="password-login" id="mima">密码登录</a>
+                                        <a href="javascript:void(0);" target="_self" class="sms-login" id="duanxin">短信登录</a>
                                     </div>
-                                    <form class="login-form">
-                                        <div class="fm-field">
+                                    <form class="login-form" action="../interface/login.php">
+                                        <div class="fm-field field1">
                                             <div>
                                                 <label class="fm-label-icon">
                                                     <i class="iconfont icon-iconuser" title="用户名"></i>
                                                 </label>
                                             </div>
                                             <div class="input-plain-wrap input-wrap-loginid ">
-                                                <input name="fm-login-id" type="text" class="fm-text" id="fm-login-id"
+                                                <input name="username" type="text" class="fm-text" id="fm-login-id"
                                                     tabindex="1" aria-label="会员名/邮箱/手机号" placeholder="会员名/邮箱/手机号"
                                                     autocapitalize="off">
                                             </div>
                                         </div>
-                                        <div class="fm-field">
+                                        <div class="fm-field field2">
                                             <div>
                                                 <label class="fm-label-icon">
                                                     <i class="icon-icon-pwd iconfont" title="请输入登录密码"></i>
                                                 </label>
                                             </div>
                                             <div class="input-plain-wrap input-wrap-password">
-                                                <input name="fm-login-password" type="password" class="fm-text"
+                                                <input name="password" type="password" class="fm-text"
                                                     id="fm-login-password" tabindex="2" aria-label="请输入登录密码"
                                                     placeholder="请输入登录密码" maxlength="40" autocapitalize="off">
                                             </div>
+                                        </div>
+                                        <div class="fm-field field3" style="display: none;">
+                                            <div>
+                                                <label class="fm-label-icon">
+                                                    <i class="iconfont icon-shouji" title="手机号"></i>
+                                                </label>
+                                            </div>
+                                            <div class="phoneselect" data-content="+86">
+                                                <select name="" id="" class="phone-select">
+                                                    <option value="+86 中国大陆"> +86 中国大陆</option>
+                                                    <option value="+86 中国大陆"> +86 中国大陆</option>
+                                                    <option value="+86 中国大陆"> +86 中国大陆</option>
+                                                    <option value="+86 中国大陆"> +86 中国大陆</option>
+                                                    <option value="+86 中国大陆"> +86 中国大陆</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-plain-wrap input-wrap-loginid ">
+                                                <input name="fm-login-id" type="text" class="fm-text fm-phone"
+                                                    id="fm-login-id" tabindex="1" aria-label="手机号" placeholder="请输入手机号"
+                                                    autocapitalize="off">
+                                            </div>
+                                        </div>
+                                        <div class="fm-field field4" style="display: none;">
+                                            <div>
+                                                <label class="fm-label-icon">
+                                                    <i class="iconfont icon-yanzhengma" title="验证码"></i>
+                                                </label>
+                                            </div>
+                                            <div class="input-plain-wrap input-wrap-loginid ">
+                                                <input name="fm-login-id" type="text" class="fm-text" id="fm-login-id"
+                                                    tabindex="1" aria-label="请输入验证码" placeholder="请输入验证码"
+                                                    autocapitalize="off">
+                                            </div>
+                                            <div class="send-btn"></div>
                                         </div>
                                         <div class="fm-btn">
                                             <button type="submit" tabindex="3"
@@ -84,8 +118,8 @@
                                             </a>
                                         </div>
                                         <div class="fm-links">
-                                            <a href="">忘记密码</a>
-                                            <a href="">忘记用户名</a>
+                                            <a href="" class="fm-link1">忘记密码</a>
+                                            <a href="" class="fm-link2">忘记用户名</a>
                                             <a href="">免费注册</a>
                                         </div>
                                     </form>
@@ -200,7 +234,9 @@
                 <p>
                     <span>
                         <a target="_blank" href="">
-                            <span class="tb-footer-mod" style="background-position:-861px 0px; width:20px; height: 20px; "></span>浙公网安备 33010002000078号
+                            <span class="tb-footer-mod"
+                                style="background-position:-861px 0px; width:20px; height: 20px; "></span>浙公网安备
+                            33010002000078号
                         </a>
                     </span>
                     <b>|</b>
@@ -231,3 +267,4 @@
 </body>
 
 </html>
+<script src="./js/login.js"></script>
