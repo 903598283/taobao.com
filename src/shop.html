@@ -8,7 +8,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/shop.css">
+    <script src="./js/cookie.js"></script>
+    <script src="./js/jquery.js"></script>
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_3168642_14cx0zfo8en.css">
+    <script src="./js/shop.js"></script>
 </head>
 
 <body>
@@ -127,7 +130,7 @@
             <div class="main">
                 <div class="main-th">
                     <div class="chk">
-                        <input type="checkbox" name="" id="">&nbsp;全选
+                        <input type="checkbox" name="" id="" checked>&nbsp;全选
                     </div>
                     <div class="item">商品信息</div>
                     <div class="price">单价</div>
@@ -136,7 +139,7 @@
                     <div class="op">操作</div>
                 </div>
                 <div class="main-list">
-                    <div class="list1">
+                    <!-- <div class="list1">
                         <div class="shop-info">
                             <input type="checkbox" name="" id="">&nbsp;&nbsp;店铺：
                             <a href="">小小木苗</a>
@@ -158,15 +161,13 @@
                                         </div>
                                         <div class="item-info">
                                             <div class="item-basic-info">
-                                                <a href="" target="_blank" title="特价清仓高达模型大班MG红异端强袭自由独角兽七剑命运帅气盲盒"
-                                                    class="item-title">特价清仓高达模型大班MG红异端强袭自由独角兽七剑命运帅气盲盒</a>
+                                                <a href="" target="_blank" class="item-title">特价清仓高达模型大班MG红异端强袭自由独角兽七剑命运帅气盲盒</a>
                                             </div>
                                             <div class="item-other-info">
                                                 <div class="promo-logos"></div>
                                                 <div class="item-icon-list clearfix">
                                                     <div class="item-icons">
-                                                        <a href="" target="_blank" class="item-icon"
-                                                            title="消费者保障服务，卖家承诺商品如实描述">
+                                                        <a href="" target="_blank" class="item-icon">
                                                             <img src="./img/shop4.png" alt="">
                                                         </a>
                                                         <a href="" target="_blank" class="item-icon" title="不支持7天无理由">
@@ -209,12 +210,12 @@
                         </div>
                         </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="bot">
                 <div class="selall">
-                    <input type="checkbox" name="" id="">&nbsp;全
+                    <input type="checkbox" name="" id="" checked>&nbsp;全
                 </div>
                 <div class="op">
                     <a href="">删除</a>
@@ -232,7 +233,7 @@
                             <span class="txt">合计（不含运费）：</span>
                             <strong class="price">
                                 <em id="J_Total">
-                                    <span class="total-symbol">&nbsp;</span>0.00
+                                    &nbsp;<span class="total-symbol">0.00</span>
                                 </em>
                             </strong>
                         </div>
